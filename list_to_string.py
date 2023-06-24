@@ -10,3 +10,5 @@ for i in l:
     l = "{}".format(i)
 print("list to string ")
 print(type(l))
+
+
