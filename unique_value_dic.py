@@ -1,7 +1,3 @@
-dic ={1: "a", 1:"b",3:"c",4:"a",5:"v"}
-
-dic1={}
-for i in dic:
-    if dic[i] not in dic1:
-        dic1[i] = i
-print(dic1)
+list = [{"a":1001, "b" : 1002},{"c":1002},{"v":1005},{"t":1001},{"y":1006}]
+dic_unique=set(value for dic in list for value in dic.values())
+print("unique value in dictionary : ",dic_unique)
