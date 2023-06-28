@@ -4,12 +4,6 @@ One incorrect definition for conjuncture
 Hope changes the outcome of language
  
 This is written by Aachal Patidar.....!! 
-One incorrect definition for conjuncture 
- anecdotes, seamed and charred into process 
- To reshape our form, towards another incomplete 
-Hope changes the outcome of language
- 
-This is written by Aachal Patidar.....!! 
 
 We took the value of N from the user (dynamic Input) 
 then gave our program a text file containing some random content 
