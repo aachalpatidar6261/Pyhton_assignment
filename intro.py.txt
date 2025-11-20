@@ -1,0 +1,968 @@
+https://www.canva.com/design/DAGbyi647WY/IPMjhpalE5meJBduUMQO1w/edit
+
+
+
+
+
+
+
+
+
+
+A variable in Python represents a named location that refers to a value and whose values can be used and processed during the program run.
+Values are assigned to a variable using a special symbol “=”, called the assignment operator.
+***************Introduction to data types*******
+Data types are the classification or categorization of data items. Data types represent a kind of value that determines what operations can be performed on that data. Numeric, non-numeric, and Boolean (true/false) data are the most used data types. However, each programming language has its classification largely reflecting its programming philosophy. Python offers the following built-in data types:
+● Numbers 
+
+        ○ Integers 
+        ○ Floating Point Numbers 
+        ○ Complex Numbers
+
+● Strings 
+● Boolean Values 
+● List, Tuple, and Dictionary
+
+*****************Variables in Memory
+variables are like storage containers. They are like named storage locations that store some value. In such cases, whenever we declare a new variable, a new storage location is given to that name/label and the value is stored at that named location. Now, whenever a new value is reassigned to that variable, the storage location remains the same. However, the value stored in the storage location is updated. This can be shown from the following illustration.
+Age = 20 
+Age = 30 # Re-assigning a different value to the same variable
+
+when we create a variable, we actually create an object somewhere in the memory with a unique mapping or ID/Address. We can see this unique ID generated against each object using id().
+Example:
+a = 5           #An object, "a" is created that has a unique ID/memory block which stores 5 as a variable 
+b = 10          #An object, "b" is created that has a unique ID/memory block which stores 10 as a variable 
+print(id(a))    #Printing the unique ID for "a"
+print(id(b))    #Printing the unique ID for "b"
+
+output:
+4425656800
+4425656960
+
+#################################3
+
+Chapter 2 - Variables and data types
+Your EXP
+1350
+Activate X booster
+Note
+TypeCasting
+Typecasting
+ 
+
+There may be times when you want to specify a type on to a variable. This can be done with type casting. Python is an OOP language, and as such, it uses classes to define data types, including its primitive types.
+
+ 
+
+Type casting is the method to convert from data type to another data type, according to user's requirements. This article introduces to the different type of casting supported by Python and how to implement them.
+
+ 
+
+Python supports two types of type casting –
+
+Implicit Type Conversion
+Explicit Type Conversion
+ 
+
+1. Implicit Type Conversion:
+ 
+
+In this, method, Python automatically converts one data type into another data type. There is no user intervention.
+
+ 
+
+val = 5
+print(type(val))
+ 
+
+output:
+
+ 
+
+#Python automatically converts val to int.
+< class 'int' >
+ 
+
+ 
+
+Example:
+
+ 
+
+a = 8.0
+b = 4.0
+m = a * b
+print(m)
+print(type(m))
+ 
+
+output:
+
+ 
+
+32.0
+< class 'float' 
+ 
+
+2. Explicit Type Conversion
+ 
+
+In Explicit Type, the Conversion user needs to manually convert data types.
+
+Mainly in typecasting can be done with these data type functions:
+
+int() - int class to construct an integer literal.
+float() - float class to construct a float literal.
+str() - string class to construct a string literal.
+ 
+
+Let’s see some examples of typecasting:
+
+ 
+
+Example:
+
+ 
+
+# int variable
+a = 5.9
+
+# typecast to int 
+n = int(a)
+print(n)
+print(type(n))
+ 
+
+output:
+
+ 
+
+5
+<class 'int'>
+ 
+
+Here, we are casting float into int data type with int() function.
+
+
+###############################
+{{{{{{{{{{{{{{ check
+What will be the output of the following code?
+
+name = 'saif'
+d = int(name)
+print(type(d))
+}}}}}}}}}}}}}}}
+##############3
+ In Python, the ord() function accepts a string of unit length as an argument and returns the Unicode equivalence of the passed argument. In other words, given string of length 1.
+What will be the output of the following code?
+name = 'A'
+d = ord(name) 
+print(type(d))
+#############33
+Input(): This function first takes the input from the user and then evaluates the expression, which means Python automatically identifies whether the user entered a string or a number or list. If the input provided is not correct then either syntax error or exception is raised by python.
+How the input function works in Python :
+When the input() function executes, program flow will be stopped until the user has given input.
+The text or message display on the output screen to ask a user to enter input value is optional i.e. the prompt, will be printed on the screen is optional.
+Whatever you enter as input, the input function converts it into a string. if you enter an integer value still input() function convert it into a string. You need to explicitly convert it into an integer in your code using typecasting.
+
+How to take space-separated input in one line in Python?
+x, y = input().split() 
+Note that we don’t have to explicitly specify split(‘ ‘) because split() uses any whitespace characters as a delimiter as default.
+One thing to note in the above Python code is, both x and y would be of string. We can convert them to int using another line
+Example:
+# Program take space-separated input in one line in Python
+x, y = input().split()
+print(x, y)  
+
+output:
+10 20
+10 20
+
+###################### PON mean point to be note
+PON :  super() is refers to the next class in the MRO( Python uses the Method Resolution Order (MRO) to determine which method to call.)
+
+
+######################3
+Introduction to Operators
+ 
+
+Operators are used to performing operations on variables and values.
+
+ 
+
+In the example below, we use the + operator to add together two values:
+
+
+ 
+
+Example:
+
+ 
+
+print(10 + 5)
+
+ Python divides the operators into the following groups:
+
+Arithmetic operators
+Assignment operators
+Comparison operators
+Logical operators
+Identity operators
+Membership operators
+Bitwise operators
+####################
+Python Arithmetic Operators
+
+ ONE IMAGE SS IN LPTP **********
+
+Arithmetic operators are used with numeric values to perform common mathematical operations:
+
+ 
+
+1. Arithmetic operators:
+
+
+ 
+
+ Arithmetic operators are used to performing mathematical operations like addition, subtraction, multiplication, and division.
+
+ 
+
+Example:
+
+ 
+
+Addition:
+
+ 
+
+#Addition of a number
+
+ 
+
+a = 10
+b = 5
+add = a + b
+print(add)
+ 
+
+output:
+ 
+15
+ 
+
+Subtraction:
+
+ 
+
+#Subtraction of a number
+
+ 
+
+a = 10
+b = 5
+sub = a - b
+print(sub)
+ 
+
+output:
+ 
+5
+ 
+
+Multiplication:
+
+ 
+
+#Multiplication of a number
+
+ 
+
+a = 10
+b = 5
+mul = a * b
+print(mul)
+ 
+
+output:
+ 
+50
+ 
+
+Division(floor):
+
+ 
+
+#Division(floor) of a number
+
+a = 13
+b = 5
+div = a // b
+print(div)
+ 
+output:
+ 
+2
+ 
+
+Division(float):
+
+ 
+
+#Division(float) of a number
+
+a = 10
+b = 5
+div = a / b
+print(div)
+ 
+output:
+ 
+2.0
+ 
+
+Modulo(remainder):
+
+ 
+
+#Modulo of both number
+
+ 
+
+a = 10
+b = 5
+mod = a % b
+print(mod)
+ 
+
+output:
+ 
+0
+ 
+
+Power:
+
+ 
+
+#Modulo of both number
+
+ 
+
+a = 2
+b = 3
+pow = a ** b
+print(pow)
+ 
+
+output:
+ 
+8
+ 
+
+ 
+
+args, hint
+####################3
+Python Assignment Operators
+ 
+
+Assignment operators are used to assign values to variables:
+
+ IMG IN SS*
+
+##############
+Python Comparison Operators
+ 
+
+Comparison operators compare the values. It either returns True or False according to the condition.
+IMG IN SS**
+
+Example:
+
+ 
+
+ 
+
+# Examples of Comparison Operators 
+a = 23
+b = 11
+ 
+# a > b is True 
+print(a > b) 
+ 
+# a < b is False 
+print(a < b) 
+ 
+# a == b is False 
+print(a == b) 
+ 
+# a != b is True 
+print(a != b) 
+ 
+# a >= b is True 
+print(a >= b) 
+ 
+# a <= b is False 
+print(a <= b)
+ 
+ 
+
+output:
+
+ 
+
+True
+False
+False
+True
+True
+False
+ 
+
+ ##################3
+
+Python Identity Operators
+
+is and is not are the identity operators. It compares the reference id of the objects.
+is          Returns true if the operands are referring to the same object. 
+is not      Returns true if the operands are not referring to the same object
+Example:
+
+a = 10
+b = 10
+
+name1 = 'Coding Ninjas Studio'
+name2 = 'Coding Ninjas Studio'
+
+list1 = [11,22,33] 
+list2 = [11,22,33] 
+
+print(a is b) 
+print(name1 is not name2) 
+
+# Output is False since lists are mutable. 
+print(list1 is list2)  
+
+output:
+True
+False
+False
+###################	
+Python Membership Operators
+ 
+The membership operators in Python are in and not in which are used to test if a value exists in a sequence. The uses are :
+
+ in            returns True only if the value is found in the sequence
+not in        returns True only if the value is not found in the sequence
+ 
+Example: 
+x = 'Coding Ninjas Studio'
+list = [1,2,3]
+
+print('S' in x) 
+print('codezen' not in x) 
+print(3 in list) 
+print('d' in x) 
+
+output:
+True
+True
+True
+True
+########################
+a = 5
+b = float(5)
+print(a is b)    # false
+##############
+
+
+
+
+###############3
+Just remember: PEMDAS, that is, Parenthesis, Exponentiation, Division, Multiplication, Addition, Subtraction. Note that the precedence order of Division and Multiplication is the same. Likewise, the order of Addition and Subtraction is also the same.
+############3
+What is the output of this expression?
+3*1**3
+First this expression will solve 1**3 because exponential has higher precedence than multiplication, so 1**3 = 1 and 3*1 = 3. The final answer is 3.
+
+####################
+
+What is the output of print (0.1 + 0.2 == 0.3) in Python? # false
+Neither of 0.1, 0.2 or 0.3 can be represented accurately in binary. The round off errors from 0.1 and 0.2 accumulate and hence there is a difference of 5.5511e-17 between (0.1 + 0.2) and 0.3.
+####################
+What does 3 ^ 4 evaluate to? # result is : 7
+^ is the Binary XOR operator.
+
+###################
+
+Introduction to Decision Making : 
+
+Decision-making is required when we want to execute a code only if a certain condition is satisfied.
+Decision structures evaluate multiple expressions that produce TRUE or FALSE as an outcome. You need to determine which action to take and which statements to execute if the outcome is TRUE or FALSE otherwise.
+
+ ####################
+Python if Statement Syntax
+ 
+
+Here, the program evaluates the test expression and will execute statement(s) only if the test expression is True.
+
+If the test expression is False, the statement(s) is not executed.
+
+
+In Python, the body of the if the statement is indicated by the indentation. The body starts with an indentation and the first unindented line marks the end. Python interprets non-zero values as True. None and 0 are interpreted as False.
+##################
+
+Introduction to Loops
+A  loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+This is less like the for the keyword in other programming languages and works more like an iterative method as found in other object-orientated programming languages.
+With the loop, we can execute a set of statements, once for each item in a list, tuple, set, etc.
+######################3
+Overview 
+
+The for loop in Python is used to iterate over a sequence (list, tuple, string, dictionary) or other iterable objects. Iterating over a sequence is called traversal.
+
+ 
+
+Syntax of for loop
+
+for i in iterator:
+    # statements
+ 
+
+Here the iterable is a collection of objects like list, tuple. The indented statements inside the for loops are executed once for each item in an iterable. The variable var takes the value of the next item of the iterable each time through the loop.
+
+ 
+
+Example:
+
+ 
+
+#Print all numbers from 0 to n.
+ 
+n = int(input())
+ 
+for i in range(n + 1):
+    print(i)
+ 
+
+output: 
+
+ 
+
+5
+0
+1
+2
+3
+4
+5
+Python range() function
+
+Below is the syntax of the range() function.
+
+ 
+
+range(start, stop,step)
+
+ 
+
+It takes three arguments. Out of the three, two are optional. The start and step are the optional arguments.
+
+
+Points to remember
+
+ 
+
+The range() function only works with the integers, So all arguments must be integers. You can not use float numbers or any other data type as a start, stop, and step value.
+All three arguments can be positive or negative.
+The step value must not be zero. If a step=0, Python will raise a ValueError exception.
+ 
+
+range(start, stop)
+
+When you pass two arguments to the range(), it will generate integers starting from the start number to stop -1.
+
+
+###########################333
+  Python while loop
+ 
+The while loop in Python is used to iterate over a block of code as long as the condition is true.
+
+We generally use this loop when we don't know the number of times to iterate beforehand.
+
+ 
+
+Syntax of while Loop in Python
+
+while condition:
+   #body of a while
+
+################
+
+for num in range(2,-5,-1):
+    print(num, end=", ") resulr : 2, 1, 0, -1, -2, -3, -4,
+
+for i in range(0,2,-1):
+   print("Hello")   result : No Output [ Solution description : 
+Here the step size is negative and the end is greater than the start so the loop will not execute and the output is None in this case.]
+
+####################3
+The break statement terminates the loop containing it. Control of the program flows to the statement immediately after the body of the loop.
+If the break statement is inside a nested loop (loop inside another loop), the break statement will terminate the innermost loop.
+ 
+example of break statement is inside a nested loop : 
+
+for i in range(5):  # Outer loop
+    for j in range(3):  # Inner loop
+        print(f"Checking: i={i}, j={j}")
+        if j == 2:  # Condition to break the inner loop
+            print("Breaking inner loop")
+            break
+    print(f"End of iteration for i={i}\n")
+Output:
+vbnet
+Copy code
+Checking: i=0, j=0
+Checking: i=0, j=1
+Checking: i=0, j=2
+Breaking inner loop
+End of iteration for i=0
+
+Checking: i=1, j=0
+Checking: i=1, j=1
+Checking: i=1, j=2
+Breaking inner loop
+End of iteration for i=1
+
+...
+
+Checking: i=4, j=0
+Checking: i=4, j=1
+Checking: i=4, j=2
+Breaking inner loop
+End of iteration for i=4
+
+
+###################
+Python continue statement
+The continue statement in Python returns the control to the beginning of the while loop. The continue statement rejects all the remaining statements in the current iteration of the loop and moves the control back to the top of the loop.
+The continue statement can be used in both while and for loops.
+
+
+ infinite loop  == runtime error [man ke chalo ]
+
+##########33##########3
+Python pass statement
+ 
+The pass statement is a null statement. But the difference between pass and comment is that comment is ignored by the interpreter whereas pass is not ignored. 
+The pass statement is generally used as a placeholder i.e. when the user does not know what code to write. So user simply places pass at that line. Sometimes, pass is used when the user doesn’t want any code to execute. So user simply places pass there as empty code is not allowed in loops, function definitions, class definitions, or in if statements. So using pass statement user avoids this error.
+
+##################
+A return statement is used to end the execution of the function call and returns the result (value of the expression following the return keyword) to the caller. The statements after the return statements are not executed. If the return statement is without any expression, then the special value None is returned. 
+
+
+ 
+
+Note: Return statement can not be used outside the function.
+
+
+Syntax:
+
+ 
+
+def function():
+    statements
+    
+    return [statement]
+	
+ ###########################33
+Django
+CodeWars and HackerRank:
+
+Practice Django-related Python challenges.
+
+Udemy:
+
+Courses like "Django for Beginners" or "Build a Real-World App with Django."
+Affordable and comprehensive.
+
+To practice Django from basic to advanced levels, you need a combination of resources for structured learning and hands-on projects. Here are some recommended platforms:
+
+1. Interactive Learning Platforms
+Django Girls Tutorial:
+
+Ideal for beginners.
+Covers the basics of setting up a Django project, templates, views, and deploying your app.
+W3Schools Django Tutorial:
+
+Offers concise, beginner-friendly guides.
+Includes interactive code snippets.
+Real Python:
+
+Beginner to advanced content, including tutorials and video lessons.
+Covers Django topics in detail, from ORM to advanced deployment techniques.
+Real Python:
+
+Beginner to advanced content, including tutorials and video lessons.
+Covers Django topics in detail, from ORM to advanced deployment techniques.
+
+############################3
+Defining Functions In Python
+ 
+
+A function, once defined, can be invoked as many times as needed by using its name, without having to rewrite its code.
+
+ def​ <​function​-​name​>(<parameters>):
+    """ Function's docstring """ 
+    <Expressions/Statements/Instructions>
+ 
+● Function blocks begin with the keyword def​ followed by the function name and ​parentheses​ ( ( ) ).
+● The input parameters​ or ​arguments​ should be placed within these parentheses. You can also define parameters inside these parentheses.
+● The first statement of a function is optional - the documentation string of the function or ​docstring.​ The docstring​ describes the functionality of a function.
+● The code block within every function starts with a colon ​(:) and is indented.​ All statements within the same code block are at the same indentation level.
+● The ​return​ statement exits a function, optionally passing back an expression/value to the function caller.
+Example:
+def add(a,b):
+    return a + b
+
+Once you have defined a function, you can call it from another function, program, or even the Python prompt. To use a function that has been defined earlier, you need to write a function call​.
+The function definition does not execute the function body. The function gets executed only when it is called or invoked
+
+Arguments And Parameters : 
+As you know that you can pass values to functions. For this, you define variables to receive values in the function definition​ 
+
+We can define these two types of values:
+ ●  Arguments:​ The values being passed to the function from the function call statement are called arguments. Eg. ​5​ and ​7​ are arguments to the ​add() function.
+●  Parameters: The values received by the function as inputs are called parameters. Eg. a​ and b​ are the parameters of the​  a​dd()​ function.
+
+#########################33
+Types Of Functions
+ 
+
+We can divide functions into the following two types:
+
+ 
+
+1. User-defined functions: Functions that are defined by the users. 
+
+    Eg. The add()​ function we created.
+
+ 2. Inbuilt Functions: Functions that are inbuilt in python.
+
+    Eg. The p​rint() function.
+
+    Eg. The type() function.
+
+#############################3
+Function Overloading: 
+ 
+
+As opposed to other languages (for example C++), method or function overloading is not supported in Python by default but that can be achieved in various ways.
+
+ 
+
+We can defined multiple functions with the same name but only the last function will be considered, all the rest gets hidden.
+
+ 
+
+Example:
+
+ 
+
+Method 1 (Not The Most Efficient Method):
+ 
+
+def mult(a, b):
+    print(a * b)
+    
+def mult(a, b, c):
+    
+    print(a * b * c)
+    
+    
+mult(2, 4, 3)
+mult(2, 7)
+ 
+
+output:
+
+ 
+
+10 
+TypeError: mult() missing 1 required positional argument: 'c'
+ 
+
+ 
+
+In the above code, there are two mult() methods, but the python compiler can only see the last i.e the one with 3 parameters. Therefore, even though we can define multiple methods with the same name and different arguments, but only the last method of them can be used. Calling any of the other methods will produce an error. Like here calling will mult(2,3) an error.
+
+ 
+
+This issue can be overcomed by the following method:
+
+ 
+
+Method 2 (Efficient One):
+By Using Multiple Dispatch Decorator 
+
+ 
+
+Multiple Dispatch Decorator Can be installed by: 
+
+pip3 install multipledispatch
+ 
+
+from multipledispatch import dispatch
+
+@dispatch(int,int)
+def mult(a, b):
+    print(a * b)
+    
+@dispatch(int,int,int)    
+def mult(a, b, c):
+    print(a * b * c)
+    
+    
+mult(2, 3, 5)
+mult(2, 3)
+ output:
+10 
+5
+
+# if we try to change the global variable valur insite the function(local) python interpriter gave error.
+
+###############################3
+Passing Variable-length arguments
+ 
+
+In Python, a variable number of arguments can be passed to a function using special symbols. There are two special symbols:
+
+ 
+
+Python uses these special Symbols for passing arguments:-
+
+ 
+
+1.)*args (for Non-Keyword Arguments)
+
+2.)**kwargs (for Keyword Arguments)
+
+ 
+
+1.) *args
+ 
+
+The special syntax *args in function definitions is used to pass a variable number of arguments to a function. It is used to pass a non-key-worded, variable-length argument list.
+
+ 
+
+*args allows us to take in more arguments than the number of formal arguments that we previously defined i.e any number of extra arguments can be tacked on to our current formal parameters (including zero extra arguments). This is because of the symbol * that is being used.
+For example, if we want to make an addition function that supports taking any number of arguments and able to add them all together. In this case we can use *args.
+The variable associated with the * becomes iterable and we can also run other higher-order functions such as map and filter, etc.
+ 
+
+Example:
+
+ 
+
+def sum(*args):
+    
+    sm = 0
+    
+    for i in args:
+        sm += i
+        
+    print(sm)
+    
+    
+sum(2,3,4,5)
+ 
+
+output:
+
+ 
+
+14
+ 
+
+2.) **kwargs
+ 
+
+The special syntax **kwargs in function definitions is used for passing a keyworded, variable-length argument list. We use double star here as it allows us to pass through keyword arguments (and any number of them).
+
+ 
+
+A keyword argument is where we provide a name to the variable as we pass it into the function.
+kwargs is similar to a dictionary where each keyword is mapped to a value which we pass along with it. That is why on iterating over the contents of kwargs the elements do not seem to be stored in any specific order.
+ 
+
+Example:
+
+ 
+
+def fun(**kwargs):
+    for key,value in  kwargs.items():
+        print(key,value)
+    
+    
+fun(name = "saif", roll = 101)
+ 
+
+output:
+
+ 
+
+name saif                                                                                                   
+roll 101 
+
+#################################33
+Python Default Parameters
+ 
+
+Function parameters can have default values in Python. We can provide a default value to a parameter by using the assignment operator (=). Here is an example.
+
+ 
+
+def greet(person, wish="Happy Birthday"):
+    """This function prints the provided message in wish. If        
+    wish is empty, it defaults to "Happy Birthday" """
+    print("Hello", person + ', ' + wish)
+    
+greet("Rita")
+greet("Hardik", "Happy New Year"
+output:
+Hello Rita, Happy Birthday
+Hello Hardik, Happy New Year 
+
+Important Points to be kept in mind while using default parameters :
+Any number of parameters in a function can have a default value.
+The conventional syntax for using default parameters states that once we have passed a default parameter, all the parameters to its right must also have default values.
+In other words, non-default parameters cannot follow default parameters.
+
+
+########################QU...
+
+all() kya return krtah jab usko koi data ni milta h to
+migrate vs makemigrations
+setting.py
+database change 
+
+****************8
+Use select_related() for foreign key relationships.
+Use prefetch_related() for many-to-many relationships. # select_related and prefetch_related? ------------------[u-tube]
+Avoid using .all() if you need a subset of data.
+Use pagination for large datasets.
+Index commonly queried fields.
+Use .only() and .defer() to fetch only required fields.
+
+*********************8
+b/w custom user authentication in Django? and built-in authentication system?
+ login_required and permission_required 
+
+######################3
+TextChoices vs textfield
+Q29: What are the key differences between Python 2 and 3?
+Q44: What is the difference between a function decorated with @staticmethod and one decorated with @classmethod?
+
+#####################################3
+real djnago project and app, envfile define
