@@ -1,0 +1,1 @@
+# There was a mismatch between my local code and the GitHub repo, so Git didn’t allow me to push. I pulled the latest changes from the repo first, fixed the merge state, then ran git status, git add ., git commit, and finally git push. After completing the merge properly, everything worked fine.#
