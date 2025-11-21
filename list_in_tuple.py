@@ -1,0 +1,5 @@
+t=(1,1.1,True,[100,200,299],"cat")
+print(t)
+print(t[3])
+t[3].append(400)
+print(t)

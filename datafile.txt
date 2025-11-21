@@ -1,0 +1,13 @@
+One incorrect definition for conjuncture 
+ anecdotes, seamed and charred into process 
+ To reshape our form, towards another incomplete 
+Hope changes the outcome of language
+ 
+This is written by Aachal Patidar.....!! 
+
+We took the value of N from the user (dynamic Input) 
+then gave our program a text file containing some random content 
+and then opened it in reading mode. 
+
+In my very first internship, I had the chance of working with Django to develop a production level app. 
+it uses both front-end and backend together in one container. The core features are — the models, the views and the templates. 

@@ -1,0 +1,3 @@
+list = ["a","b","v","d"]
+str="".join(list)
+print("list character into string ",str)

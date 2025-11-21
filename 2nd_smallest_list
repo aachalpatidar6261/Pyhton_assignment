@@ -1,0 +1,4 @@
+l = [16,25,45,64,99,87,65]
+
+l.sort()
+print("second smmallest number : ",l[1])
